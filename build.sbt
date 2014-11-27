@@ -1,5 +1,7 @@
 scalaVersion := "2.11.4"
 
+testOptions += Tests.Argument(TestFrameworks.JUnit, "-v")
+
 libraryDependencies ++= (
   ("com.googlecode.json-simple" % "json-simple" % "1.1.1" exclude("junit", "junit")) ::
   ("com.novocode" % "junit-interface" % "0.11" % "test") ::
